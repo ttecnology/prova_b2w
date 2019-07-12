@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<star_wars>
+    <banco>
+        <nome>db_star_wars</nome>
+        <collection>planetas</collection>
+    </banco>
+    <urls>
+    <base_url>http://localhost:8080/</base_url>
+
+        <base_url_api>http://localhost:8080/api/</base_url_api>
+
+        <base_url_api_search>http://localhost:8080/api/search/</base_url_api_search>
+    </urls>
+    <inserir>
+        <metodo>GET</metodo>
+        <Json>{
+        "nome": "NOME PLANETA",
+        "clima":"CLIMA PLANETA",
+        "terreno": "TERRENO PLANETA"
+        }</Json>
+    </inserir>
+
+    <listagem>
+        <metodo>GET</metodo>
+        <camininho>base_url_api/</caminho>
+    </listagem>
+
+    <delete>
+    <metodo>DELETE</metodo>
+    <url>base_url_api/ID_DO_PLANETA</url>
+    </delete>
+
+    <SEARCH>
+        <metodo>GET</metodo>
+        <url>base_url_api_search/ID_DO_PLANETA_ou_NOME_DO_PLANETA</url>
+    </SEARCH>
+</star_wars>
